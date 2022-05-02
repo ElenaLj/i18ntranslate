@@ -5,6 +5,11 @@
   "projects": {
     "i18ntranslate": {
       "projectType": "application",
+      "i18n": {
+        "locales": {
+          "fr": "locale/messages.fr.xlf"
+        }
+      },
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
@@ -60,6 +65,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "fr": {
+              "localize": ["fr"]
             }
           },
           "defaultConfiguration": "production"
@@ -72,6 +80,9 @@
             },
             "development": {
               "browserTarget": "i18ntranslate:build:development"
+            },
+            "fr": {
+              "browserTarget": "i18ntranslate:build:fr"
             }
           },
           "defaultConfiguration": "development"
