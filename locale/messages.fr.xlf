@@ -16,6 +16,19 @@
         <note priority="1" from="description"> This is the title of the web page</note>
         <note priority="1" from="meaning">Title </note>
       </trans-unit>
+       <trans-unit id="welcome2" datatype="html">
+        <source> This is a title
+        </source>
+        <target>
+        C'est un titre
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+        <note priority="1" from="description"> This is the second title of the page</note>
+        <note priority="1" from="meaning">Second title </note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

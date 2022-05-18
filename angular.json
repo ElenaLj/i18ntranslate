@@ -7,7 +7,8 @@
       "projectType": "application",
       "i18n": {
         "locales": {
-          "fr": "locale/messages.fr.xlf"
+          "fr": "locale/messages.fr.xlf",
+          "it": "locale/messages.it.xlf"
         }
       },
       "schematics": {
@@ -68,6 +69,9 @@
             },
             "fr": {
               "localize": ["fr"]
+            },
+            "it": {
+              "localize": ["it"]
             }
           },
           "defaultConfiguration": "production"
@@ -83,6 +87,9 @@
             },
             "fr": {
               "browserTarget": "i18ntranslate:build:fr"
+            },
+            "it": {
+              "browserTarget": "i18ntranslate:build:it"
             }
           },
           "defaultConfiguration": "development"
