@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
-
 import localeIt from '@angular/common/locales/it';
 
 registerLocaleData(localeFr);

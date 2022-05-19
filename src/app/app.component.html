@@ -3,9 +3,23 @@
 </h1>
 
 <h2 i18n="Second title | This is the second title of the page@@welcome2">
-  This is a title
+  This is another title
 </h2>
 
+<p i18n="Date | This is the date@@date">
+  This is the date: {{formattedDate}}
+  This is the locale: {{locale}}
+</p>
+
+<p i18n="Messages | This is the number of messages received@@messages">
+  This is the total number of messages:
+  {{ messageMapping[messages.length] }}
+</p>
+
 <p>
-  This is the date: {{ formattedDate}} {{locale}}
+  {{ messageMapping | json}}
+</p>
+
+<p i18n="Fruits | This is the number of fruits@@fruits">
+  This is the total number of fruits: {{ fruits.length | i18nPlural:fruitMapping }}
 </p>

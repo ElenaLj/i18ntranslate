@@ -17,10 +17,11 @@
         <note priority="1" from="meaning">Title </note>
       </trans-unit>
        <trans-unit id="welcome2" datatype="html">
-        <source> This is a title
+        <source>
+          This is a title
         </source>
         <target>
-        C'est un titre
+          C'est un titre
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
@@ -29,7 +30,42 @@
         <note priority="1" from="description"> This is the second title of the page</note>
         <note priority="1" from="meaning">Second title </note>
       </trans-unit>
-    </body>
+      <trans-unit id="date" datatype="html">
+        <source> This is the date: <x id="INTERPOLATION" equiv-text="{{formattedDate}}"/> This is the locale: <x id="INTERPOLATION_1" equiv-text="{{locale}}"/>
+        </source>
+        <target>
+          Voici la date: <x id="INTERPOLATION" equiv-text="{{formattedDate}}"/> Questo è il locale: <x id="INTERPOLATION_1" equiv-text="{{locale}}"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">9,12</context>
+        </context-group>
+        <note priority="1" from="description"> This is the date</note>
+        <note priority="1" from="meaning">Date </note>
+      </trans-unit>
+      <trans-unit id="messages" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ messages.length | i18nPlural: messageMapping }}"/>
+        </source>
+        <target>
+          C'est le nombre total de messages: <x id="INTERPOLATION" equiv-text="{{ messages.length | i18nPlural: messageMapping }}"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+        <note priority="1" from="description"> This is the number of messages received</note>
+        <note priority="1" from="meaning">Messages </note>
+      </trans-unit>
+      <trans-unit id="single">
+        <target>Un message 123</target>
+      </trans-unit>
+        <trans-unit id="fruit">
+        <target>Fraise</target>
+      </trans-unit>
+        <trans-unit id="rien">
+        <target>Rien</target>
+      </trans-unit>
+      </body>
   </file>
 </xliff>
 

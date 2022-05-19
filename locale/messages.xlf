@@ -13,8 +13,8 @@
         <note priority="1" from="description"> This is the title of the web page</note>
         <note priority="1" from="meaning">Title </note>
       </trans-unit>
-       <trans-unit id="welcome2" datatype="html">
-        <source> This is a title
+      <trans-unit id="welcome2" datatype="html">
+        <source> This is another title
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
@@ -23,6 +23,48 @@
         <note priority="1" from="description"> This is the second title of the page</note>
         <note priority="1" from="meaning">Second title </note>
       </trans-unit>
-    </body>
-  </file>
+      <trans-unit id="date" datatype="html">
+        <source> This is the date: <x id="INTERPOLATION" equiv-text="{{formattedDate}}"/>
+ This is the locale: <x id="INTERPOLATION_1" equiv-text="{{locale}}"/>
+      </source>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/app.component.html</context>
+        <context context-type="linenumber">9,12</context>
+      </context-group>
+      <note priority="1" from="description"> This is the date</note>
+      <note priority="1" from="meaning">Date </note>
+    </trans-unit>
+    <trans-unit id="messages" datatype="html">
+      <source> This is the total number of messages: <x id="INTERPOLATION" equiv-text="{{ messages.length | i18nPlural: messageMapping }}"/>
+      </source>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/app.component.html</context>
+        <context context-type="linenumber">14,16</context>
+      </context-group>
+      <note priority="1" from="description"> This is the number of messages received</note>
+      <note priority="1" from="meaning">Messages </note>
+    </trans-unit>
+    <trans-unit id="6433745649544354245" datatype="html">
+      <source>No messages</source>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/app.component.ts</context>
+        <context context-type="linenumber">21</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="4021766198340222607" datatype="html">
+      <source>One message</source>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/app.component.ts</context>
+        <context context-type="linenumber">22</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="8238295111807489569" datatype="html">
+      <source>Many messages</source>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/app.component.ts</context>
+        <context context-type="linenumber">23</context>
+      </context-group>
+    </trans-unit>
+  </body>
+</file>
 </xliff>
